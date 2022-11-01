@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+:root {
+    --industrial: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --cursiva: 'Indie Flower', cursive;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    min-height: 100vh;
+    background-color: azure;
+    font-family: var(--industrial);
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 30px;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: 7vh;
+}
+header > p {
+    padding-bottom: 30px;
+    
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 20px;
+    font-family: var(--cursiva);
+    font-size: 1.15em;
+}
+section > p {
+    padding-bottom: 2em;
+}
+section.imagem {
+    background-color: rgb(94, 86, 66);
+    color: white;
+    box-shadow: inset 5px 5px 15px 0px rgba(0, 0, 0, 0.61);
+    background-attachment: fixed;
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.479);
+    display: inline-block;
+    padding: 14px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.712);
+}
+section#img1 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+section#img2 {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
